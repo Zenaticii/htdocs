@@ -1,0 +1,46 @@
+#h2h {
+  font-family: 'Arial';
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 0.75;
+}
+
+#span2 {
+  display: block;
+}
+
+#span2:not(.light) {
+  opacity: 0;
+  animation: flashText .5s ease-out alternate infinite;
+}
+
+#span2.light {
+  position: relative;
+  display: inline-block;
+  
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 120%;
+    filter: blur(10px);
+    content: "";
+    opacity: 0;
+    animation: flash .5s ease-out alternate infinite;
+  }
+}
+
+@keyframes flash{
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flashText {
+  to {
+    opacity: 0.15;
+  }
+}
