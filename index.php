@@ -5,6 +5,7 @@ $active_dashboard=$active_page;
 $current_page='Dashboard';
 $previous_page='';
 $title='';
+//test
 ?>
 <!DOCTYPE html>
 <html>
