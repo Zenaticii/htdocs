@@ -12,7 +12,7 @@ $title=' | Login';
 <!-- begin::Head -->
 <head>
 	<!--begin::Base Path (base relative path for assets of this page) -->
-	<base href="">
+	<base href="../">
 	<?php
 	include $links.'shortcuts/head.php';
 	?>
