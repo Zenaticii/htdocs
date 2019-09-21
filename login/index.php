@@ -16,6 +16,10 @@ $title=' | Login';
 	<?php
 	include $links.'shortcuts/head.php';
 	?>
+	
+	<!--begin::Page Custom Styles(used by this page) -->
+	<link href="./assets/css/demo12/pages/general/login/login-3.css" rel="stylesheet" type="text/css" />
+	<!--end::Page Custom Styles -->	
 </head>
 <!-- end::Head -->
 
@@ -125,6 +129,7 @@ $title=' | Login';
 	<?php
 	include $links.'shortcuts/globalconfig.php';
 	?>
+
 	<!--begin::Page Scripts(used by this page) -->
 	<script src="./assets/js/demo12/pages/login/login-general.js" type="text/javascript"></script>
 	<!--end::Page Scripts -->

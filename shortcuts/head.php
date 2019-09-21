@@ -25,17 +25,10 @@ echo '
 				}
 			});
 		</script>
-
 		<!--end::Fonts -->
-
-		<!--begin::Page Vendors Styles(used by this page) -->
-		<link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-
-		<!--end::Page Vendors Styles -->
 
 		<!--begin:: Global Mandatory Vendors -->
 		<link href="./assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
-
 		<!--end:: Global Mandatory Vendors -->
 
 		<!--begin:: Global Optional Vendors -->
@@ -64,17 +57,19 @@ echo '
 		<link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
 		<link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
-
 		<!--end:: Global Optional Vendors -->
 
 		<!--begin::Global Theme Styles(used by all pages) -->
 		<link href="./assets/css/demo12/style.bundle.css" rel="stylesheet" type="text/css" />
-
 		<!--end::Global Theme Styles -->
 
 		<!--begin::Layout Skins(used by all pages) -->
-
+		<link href="./assets/css/demo12/skins/header/base/light.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/demo12/skins/header/menu/light.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/demo12/skins/brand/dark.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/demo12/skins/aside/dark.css" rel="stylesheet" type="text/css" />
 		<!--end::Layout Skins -->
+
 		<link rel="shortcut icon" href="./assets/media/logos/favicon.ico" />
 ';
 ?>
