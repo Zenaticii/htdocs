@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<head>
 
 		<!--begin::Base Path (base relative path for assets of this page) -->
-		<base href="../../../../">
+		<base href="../">
 
 		<!--end::Base Path -->
 		<meta charset="utf-8" />
@@ -108,7 +108,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="kt-login__container">
 							<div class="kt-login__logo">
 								<a href="#">
-									<img src="./img/4x/vg.png">
+									<img src="./img/logos/logoArtboard 1@4x.png" style="height: 30%; width: 30%;">
 								</a>
 							</div>
 							<div class="kt-login__signin">

@@ -765,11 +765,11 @@ echo '
 							</div>
 
 							<!--end: Language bar -->';
-							if(false)
+							if(true)
 							{
 								echo '
 								<div class="kt-header__topbar-item">
-									<button type="button" class="btn btn-light btn-hover-primary btn-square">Log in/Sign Up</button>
+									<button type="button" class="btn btn-light btn-hover-primary btn-square" onclick="goLogin()">Log in/Sign Up</button>
 								</div>';
 							}
 							else
@@ -987,5 +987,8 @@ echo '
 <script>
 function goLang() {
   window.location.assign(window.location.protocol + "//" +window.location.hostname + "/ro" + window.location.pathname)
+}
+function goLogin() {
+	window.location.assign(window.location.protocol + "//" +window.location.hostname + "/login")
 }
 </script>
