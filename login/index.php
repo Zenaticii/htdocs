@@ -4,7 +4,7 @@ include $links.'shortcuts/active-variables.php';
 //$active_dashboard=$active_page;
 //$current_page='Dashboard';
 //$previous_page='';
-$title='';
+$title=' | Login';
 ?>
 <!DOCTYPE html>
 <html lang="en">

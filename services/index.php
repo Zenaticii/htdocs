@@ -4,7 +4,7 @@ include $links.'shortcuts/active-variables.php';
 $active_services=$active_page;
 $current_page='Services';
 $previous_page='Dashboard';
-$title='';
+$title=' | Services';
 ?>
 <!DOCTYPE html>
 <html>
