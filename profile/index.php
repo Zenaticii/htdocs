@@ -1,16 +1,16 @@
 <?php
-$links='';
+$links='../';
 include $links.'shortcuts/active-variables.php';
 $active_dashboard=$active_page;
-$current_page='Dashboard';
+$current_page='Profile';
 $previous_page='';
-$title=' | Dashboard';
+$title=' | Profile';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<!--begin::Base Path (base relative path for assets of this page) -->
-	<base href="">
+	<base href="../">
 	<?php
 	include $links.'shortcuts/head.php';
 	?>
@@ -377,105 +377,7 @@ $title=' | Dashboard';
 									<div class="row">
 										<div class="col-xl-6">
 
-											<!--begin:: Widgets/Order Statistics-->
-											<div class="kt-portlet kt-portlet--height-fluid">
-												<div class="kt-portlet__head">
-													<div class="kt-portlet__head-label">
-														<h3 class="kt-portlet__head-title">
-															Order Statistics
-														</h3>
-													</div>
-													<div class="kt-portlet__head-toolbar">
-														<a href="#" class="btn btn-label-brand btn-bold btn-sm dropdown-toggle" data-toggle="dropdown">
-															Export
-														</a>
-														<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right">
-
-															<!--begin::Nav-->
-															<ul class="kt-nav">
-																<li class="kt-nav__head">
-																	Export Options
-																	<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
-																</li>
-																<li class="kt-nav__separator"></li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-drop"></i>
-																		<span class="kt-nav__link-text">Activity</span>
-																	</a>
-																</li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-calendar-8"></i>
-																		<span class="kt-nav__link-text">FAQ</span>
-																	</a>
-																</li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-link"></i>
-																		<span class="kt-nav__link-text">Settings</span>
-																	</a>
-																</li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-new-email"></i>
-																		<span class="kt-nav__link-text">Support</span>
-																		<span class="kt-nav__link-badge">
-																			<span class="kt-badge kt-badge--success">5</span>
-																		</span>
-																	</a>
-																</li>
-																<li class="kt-nav__separator"></li>
-																<li class="kt-nav__foot">
-																	<a class="btn btn-label-danger btn-bold btn-sm" href="#">Upgrade plan</a>
-																	<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
-																</li>
-															</ul>
-
-															<!--end::Nav-->
-														</div>
-													</div>
-												</div>
-												<div class="kt-portlet__body kt-portlet__body--fluid">
-													<div class="kt-widget12">
-														<div class="kt-widget12__content">
-															<div class="kt-widget12__item">
-																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Annual Taxes EMS</span>
-																	<span class="kt-widget12__value">$400,000</span>
-																</div>
-																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Finance Review Date</span>
-																	<span class="kt-widget12__value">July 24,2019</span>
-																</div>
-															</div>
-															<div class="kt-widget12__item">
-																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Avarage Revenue</span>
-																	<span class="kt-widget12__value">$60M</span>
-																</div>
-																<div class="kt-widget12__info">
-																	<span class="kt-widget12__desc">Revenue Margin</span>
-																	<div class="kt-widget12__progress">
-																		<div class="progress kt-progress--sm">
-																			<div class="progress-bar kt-bg-brand" role="progressbar" style="width: 40%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-																		</div>
-																		<span class="kt-widget12__stat">
-																			40%
-																		</span>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="kt-widget12__chart" style="height:250px;">
-															<canvas id="kt_chart_order_statistics"></canvas>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<!--end:: Widgets/Order Statistics-->
-										</div>
+											
 										<div class="col-xl-6">
 
 											<!--begin:: Widgets/Tasks -->
@@ -486,25 +388,32 @@ $title=' | Dashboard';
 															Tasks
 														</h3>
 													</div>
-													<div class="kt-portlet__head-toolbar">
-														<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-brand" role="tablist">
-															<li class="nav-item">
+													<!-- Begin of table-->
+													<table>
+														<tr>
+															<td><li class="nav-item">
 																<a class="nav-link active" data-toggle="tab" href="#kt_widget2_tab1_content" role="tab">
 																	Today
 																</a>
-															</li>
-															<li class="nav-item">
+															</li></td>
+															<td>
+																<li class="nav-item">
 																<a class="nav-link" data-toggle="tab" href="#kt_widget2_tab2_content" role="tab">
 																	Week
 																</a>
 															</li>
-															<li class="nav-item">
+															</td>
+															<tr>
+																<li class="nav-item">
 																<a class="nav-link" data-toggle="tab" href="#kt_widget2_tab3_content" role="tab">
 																	Month
 																</a>
 															</li>
-														</ul>
-													</div>
+															</tr>
+														</tr>
+
+													</table>
+													<!-- End of table-->
 												</div>
 												<div class="kt-portlet__body">
 													<div class="tab-content">
@@ -1520,140 +1429,7 @@ $title=' | Dashboard';
 									<div class="row">
 										<div class="col-xl-6">
 
-											<!--begin:: Widgets/Last Updates-->
-											<div class="kt-portlet kt-portlet--height-fluid">
-												<div class="kt-portlet__head">
-													<div class="kt-portlet__head-label">
-														<h3 class="kt-portlet__head-title">
-															Latest Updates
-														</h3>
-													</div>
-													<div class="kt-portlet__head-toolbar">
-														<a href="#" class="btn btn-label-brand btn-bold btn-sm dropdown-toggle" data-toggle="dropdown">
-															Today
-														</a>
-														<div class="dropdown-menu dropdown-menu-fit dropdown-menu-md dropdown-menu-right">
-
-															<!--begin::Nav-->
-															<ul class="kt-nav">
-																<li class="kt-nav__head">
-																	Export Options
-																	<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."></i>
-																</li>
-																<li class="kt-nav__separator"></li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-drop"></i>
-																		<span class="kt-nav__link-text">Activity</span>
-																	</a>
-																</li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-calendar-8"></i>
-																		<span class="kt-nav__link-text">FAQ</span>
-																	</a>
-																</li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-link"></i>
-																		<span class="kt-nav__link-text">Settings</span>
-																	</a>
-																</li>
-																<li class="kt-nav__item">
-																	<a href="#" class="kt-nav__link">
-																		<i class="kt-nav__link-icon flaticon2-new-email"></i>
-																		<span class="kt-nav__link-text">Support</span>
-																		<span class="kt-nav__link-badge">
-																			<span class="kt-badge kt-badge--success">5</span>
-																		</span>
-																	</a>
-																</li>
-																<li class="kt-nav__separator"></li>
-																<li class="kt-nav__foot">
-																	<a class="btn btn-label-danger btn-bold btn-sm" href="#">Upgrade plan</a>
-																	<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
-																</li>
-															</ul>
-
-															<!--end::Nav-->
-														</div>
-													</div>
-												</div>
-												<div class="kt-portlet__body">
-
-													<!--begin::widget 12-->
-													<div class="kt-widget4">
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon-pie-chart-1 kt-font-info"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																Metronic v6 has been arrived!
-															</a>
-															<span class="kt-widget4__number kt-font-info">+500</span>
-														</div>
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon-safe-shield-protection  kt-font-success"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																Metronic community meet-up 2019 in Rome.
-															</a>
-															<span class="kt-widget4__number kt-font-success">+1260</span>
-														</div>
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon2-line-chart kt-font-danger"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																Metronic Angular 7 version will be landing soon...
-															</a>
-															<span class="kt-widget4__number kt-font-danger">+1080</span>
-														</div>
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon2-pie-chart-1 kt-font-primary"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																ale! Purchase Metronic at 70% off for limited time
-															</a>
-															<span class="kt-widget4__number kt-font-primary">70% Off!</span>
-														</div>
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon2-rocket kt-font-brand"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																Metronic VueJS version is in progress. Stay tuned!
-															</a>
-															<span class="kt-widget4__number kt-font-brand">+134</span>
-														</div>
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon2-notification kt-font-warning"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																Black Friday! Purchase Metronic at ever lowest 90% off for limited time
-															</a>
-															<span class="kt-widget4__number kt-font-warning">70% Off!</span>
-														</div>
-														<div class="kt-widget4__item">
-															<span class="kt-widget4__icon">
-																<i class="flaticon2-file kt-font-success"></i>
-															</span>
-															<a href="#" class="kt-widget4__title kt-widget4__title--light">
-																Metronic React version is in progress.
-															</a>
-															<span class="kt-widget4__number kt-font-success">+13%</span>
-														</div>
-													</div>
-
-													<!--end::Widget 12-->
-												</div>
-											</div>
-
-											<!--end:: Widgets/Last Updates-->
-										</div>
+											
 										<div class="col-xl-6">
 
 											<!--begin:: Widgets/Notifications-->
@@ -2014,17 +1790,10 @@ $title=' | Dashboard';
 	<?php
 	include $links.'shortcuts/globalconfig.php';
 	?>
-	
-	<!--begin::Page Vendors(used by this page) -->
-	<script src="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
-	<script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script>
-	<script src="./assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
-	<!--end::Page Vendors -->
-
 	<!--begin::Page Scripts(used by this page) -->
-	<script src="./assets/js/demo12/pages/dashboard.js" type="text/javascript"></script>
-	<!--end::Page Scripts -->
-
+	<script src="./assets/js/demo1/pages/dashboard.js" type="text/javascript"></script>
+		<script src="./assets/js/demo1/pages/custom/apps/user/profile.js" type="text/javascript"></script>
+		<!--end::Page Scripts -->
 	<?php
 	include $links.'shortcuts/adfinder.php';
 	?>
