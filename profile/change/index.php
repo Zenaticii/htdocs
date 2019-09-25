@@ -4,7 +4,7 @@ include $links.'shortcuts/active-variables.php';
 $active_dashboard=$active_page;
 $current_page='Profile';
 $previous_page='';
-$title=' | Profile'; 
+$title=' | Profile';
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,6 +20,7 @@ $title=' | Profile';
 	include $links.'shortcuts/header.php';
 	?>
 	<!--begin::PAGE CONTENT -->
+
 <!-- begin:: Content -->
 						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
 
@@ -37,7 +38,7 @@ $title=' | Profile';
 								<div class="kt-grid__item kt-app__toggle kt-app__aside" id="kt_user_profile_aside">
 
 									<!--begin:: Widgets/Applications/User/Profile1-->
-									<div class="kt-portlet ">
+									<div class="kt-portlet kt-portlet--height-fluid-">
 										<div class="kt-portlet__head  kt-portlet__head--noborder">
 											<div class="kt-portlet__head-label">
 												<h3 class="kt-portlet__head-title">
@@ -149,7 +150,7 @@ $title=' | Profile';
 																</span>
 															</span>
 														</a>
-														<a href="../profile/personal" class="kt-widget__item kt-widget__item--active">
+														<a href="../profile/Personal" class="kt-widget__item ">
 															<span class="kt-widget__section">
 																<span class="kt-widget__icon">
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -164,7 +165,7 @@ $title=' | Profile';
 																</span>
 															</span>
 														</a>
-														<a href="../profile/Account" class="kt-widget__item ">
+														<a href="../Personal/account" class="kt-widget__item ">
 															<span class="kt-widget__section">
 																<span class="kt-widget__icon">
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -179,7 +180,7 @@ $title=' | Profile';
 																</span>
 																</spandiv>
 														</a>
-														<a href="../profile/Change" class="kt-widget__item ">
+														<a href="../profile/change" class="kt-widget__item kt-widget__item--active">
 															<span class="kt-widget__section">
 																<span class="kt-widget__icon">
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -191,12 +192,12 @@ $title=' | Profile';
 																		</g>
 																	</svg> </span>
 																<span class="kt-widget__desc">
-																	Change Password
+																	Change Passwort
 																</span>
 															</span>
 															<span class="kt-badge kt-badge--unified-danger kt-badge--sm kt-badge--rounded kt-badge--bolder">5</span>
 														</a>
-														<a href="../profile/email" class="kt-widget__item ">
+														<a href="../profile/Email" class="kt-widget__item ">
 															<span class="kt-widget__section">
 																<span class="kt-widget__icon">
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -273,50 +274,50 @@ $title=' | Profile';
 								<div class="kt-grid__item kt-grid__item--fluid kt-app__content">
 									<div class="row">
 										<div class="col-xl-12">
-											<div class="kt-portlet">
+											<div class="kt-portlet kt-portlet--height-fluid">
 												<div class="kt-portlet__head">
 													<div class="kt-portlet__head-label">
-														<h3 class="kt-portlet__head-title">Personal Information <small>update your personal informaiton</small></h3>
+														<h3 class="kt-portlet__head-title">Change Password<small>change or reset your account password</small></h3>
 													</div>
-													<div class="kt-portlet__head-toolbar">
-														<div class="kt-portlet__head-wrapper">
+													<div class="kt-portlet__head-toolbar kt-hidden">
+														<div class="kt-portlet__head-toolbar">
 															<div class="dropdown dropdown-inline">
-																<button type="button" class="btn btn-label-brand btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																	<i class="flaticon2-gear"></i>
+																<button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																	<i class="la la-sellsy"></i>
 																</button>
 																<div class="dropdown-menu dropdown-menu-right">
 																	<ul class="kt-nav">
 																		<li class="kt-nav__section kt-nav__section--first">
-																			<span class="kt-nav__section-text">Export Tools</span>
+																			<span class="kt-nav__section-text">Quick Actions</span>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon la la-print"></i>
-																				<span class="kt-nav__link-text">Print</span>
+																				<i class="kt-nav__link-icon flaticon2-graph-1"></i>
+																				<span class="kt-nav__link-text">Statistics</span>
 																			</a>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon la la-copy"></i>
-																				<span class="kt-nav__link-text">Copy</span>
+																				<i class="kt-nav__link-icon flaticon2-calendar-4"></i>
+																				<span class="kt-nav__link-text">Events</span>
 																			</a>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon la la-file-excel-o"></i>
-																				<span class="kt-nav__link-text">Excel</span>
+																				<i class="kt-nav__link-icon flaticon2-layers-1"></i>
+																				<span class="kt-nav__link-text">Reports</span>
 																			</a>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon la la-file-text-o"></i>
-																				<span class="kt-nav__link-text">CSV</span>
+																				<i class="kt-nav__link-icon flaticon2-bell-1o"></i>
+																				<span class="kt-nav__link-text">Notifications</span>
 																			</a>
 																		</li>
 																		<li class="kt-nav__item">
 																			<a href="#" class="kt-nav__link">
-																				<i class="kt-nav__link-icon la la-file-pdf-o"></i>
-																				<span class="kt-nav__link-text">PDF</span>
+																				<i class="kt-nav__link-icon flaticon2-file-1"></i>
+																				<span class="kt-nav__link-text">Files</span>
 																			</a>
 																		</li>
 																	</ul>
@@ -329,78 +330,38 @@ $title=' | Profile';
 													<div class="kt-portlet__body">
 														<div class="kt-section kt-section--first">
 															<div class="kt-section__body">
-																<div class="row">
-																	<label class="col-xl-3"></label>
-																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Customer Info:</h3>
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Avatar</label>
-																	<div class="col-lg-9 col-xl-6">
-																		<div class="kt-avatar kt-avatar--outline kt-avatar--circle" id="kt_apps_user_add_avatar">
-																			<div class="kt-avatar__holder" style="background-image: url(&quot;http://keenthemes.com/metronic/preview/default/custom/user/assets/media/users/100_1.jpg&quot;);"></div>
-																			<label class="kt-avatar__upload" data-toggle="kt-tooltip" title="" data-original-title="Change avatar">
-																				<i class="fa fa-pen"></i>
-																				<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
-																			</label>
-																			<span class="kt-avatar__cancel" data-toggle="kt-tooltip" title="" data-original-title="Cancel avatar">
-																				<i class="fa fa-times"></i>
-																			</span>
-																		</div>
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">First Name</label>
-																	<div class="col-lg-9 col-xl-6">
-																		<input class="form-control" type="text" value="Nick">
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Last Name</label>
-																	<div class="col-lg-9 col-xl-6">
-																		<input class="form-control" type="text" value="Bold">
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Company Name</label>
-																	<div class="col-lg-9 col-xl-6">
-																		<input class="form-control" type="text" value="Loop Inc.">
-																		<span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span>
+																<div class="alert alert-solid-danger alert-bold fade show kt-margin-t-20 kt-margin-b-40" role="alert">
+																	<div class="alert-icon"><i class="fa fa-exclamation-triangle"></i></div>
+																	<div class="alert-text">Configure user passwords to expire periodically. Users will need warning that their passwords are going to expire, <br>or they might inadvertently get locked out of the system!</div>
+																	<div class="alert-close">
+																		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+																			<span aria-hidden="true"><i class="la la-close"></i></span>
+																		</button>
 																	</div>
 																</div>
 																<div class="row">
 																	<label class="col-xl-3"></label>
 																	<div class="col-lg-9 col-xl-6">
-																		<h3 class="kt-section__title kt-section__title-sm">Contact Info:</h3>
+																		<h3 class="kt-section__title kt-section__title-sm">Change Or Recover Your Password:</h3>
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Contact Phone</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Current Password</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<div class="input-group">
-																			<div class="input-group-prepend"><span class="input-group-text"><i class="la la-phone"></i></span></div>
-																			<input type="text" class="form-control" value="+35278953712" placeholder="Phone" aria-describedby="basic-addon1">
-																		</div>
-																		<span class="form-text text-muted">We'll never share your email with anyone else.</span>
+																		<input type="password" class="form-control" value="" placeholder="Current password">
+																		<a href="#" class="kt-link kt-font-sm kt-font-bold kt-margin-t-5">Forgot password ?</a>
 																	</div>
 																</div>
 																<div class="form-group row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Email Address</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">New Password</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<div class="input-group">
-																			<div class="input-group-prepend"><span class="input-group-text"><i class="la la-at"></i></span></div>
-																			<input type="text" class="form-control" value="nick.bold@loop.com" placeholder="Email" aria-describedby="basic-addon1">
-																		</div>
+																		<input type="password" class="form-control" value="" placeholder="New password">
 																	</div>
 																</div>
 																<div class="form-group form-group-last row">
-																	<label class="col-xl-3 col-lg-3 col-form-label">Company Site</label>
+																	<label class="col-xl-3 col-lg-3 col-form-label">Verify Password</label>
 																	<div class="col-lg-9 col-xl-6">
-																		<div class="input-group">
-																			<input type="text" class="form-control" placeholder="Username" value="loop">
-																			<div class="input-group-append"><span class="input-group-text">.com</span></div>
-																		</div>
+																		<input type="password" class="form-control" value="" placeholder="Verify password">
 																	</div>
 																</div>
 															</div>
@@ -412,7 +373,7 @@ $title=' | Profile';
 																<div class="col-lg-3 col-xl-3">
 																</div>
 																<div class="col-lg-9 col-xl-9">
-																	<button type="reset" class="btn btn-success">Submit</button>&nbsp;
+																	<button type="reset" class="btn btn-brand btn-bold">Change Password</button>&nbsp;
 																	<button type="reset" class="btn btn-secondary">Cancel</button>
 																</div>
 															</div>
@@ -431,19 +392,18 @@ $title=' | Profile';
 						</div>
 
 						<!-- end:: Content -->
+
 	<!--END::PAGE CONTENT -->
 	<?php
 	include $links.'shortcuts/globalconfig.php';
 	?>
-
 	<!--begin::Page Scripts(used by this page) -->
-	<script src="./assets/js/demo12/pages/dashboard.js" type="text/javascript"></script>
-	<script src="./assets/js/demo1/pages/custom/apps/user/profile.js" type="text/javascript"></script>
-	<!--end::Page Scripts -->
-
+	<script src="./assets/js/demo1/pages/dashboard.js" type="text/javascript"></script>
+		<script src="./assets/js/demo1/pages/custom/apps/user/profile.js" type="text/javascript"></script>
+		<!--end::Page Scripts -->
 	<?php
 	include $links.'shortcuts/adfinder.php';
 	?>
 
 </body>
-</html>
+</html> 
