@@ -1,5 +1,5 @@
 <?php
-$links='../';
+$links='../../';
 include $links.'shortcuts/active-variables.php';
 $active_dashboard=$active_page;
 $current_page='Profile';
@@ -10,7 +10,7 @@ $title=' | Profile';
 <html>
 <head>
 	<!--begin::Base Path (base relative path for assets of this page) -->
-	<base href="../">
+	<base href="../../">
 	<?php
 	include $links.'shortcuts/head.php';
 	?>
@@ -21,7 +21,7 @@ $title=' | Profile';
 	?>
 	<!--begin::PAGE CONTENT -->
 <!-- begin:: Content -->
-						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content"> 
 
 							<!--Begin::App-->
 							<div class="kt-grid kt-grid--desktop kt-grid--ver kt-grid--ver-desktop kt-app">
@@ -83,9 +83,9 @@ $title=' | Profile';
 																</span>
 															</a>
 														</li>
-														<li class="kt-nav__separator"></li>
+														<li class="kt-nav__separator"></li> 
 														<li class="kt-nav__foot">
-															<a class="btn btn-label-danger btn-bold btn-sm" href="#">Upgrade plan</a>
+															<a class="btn btn-label-danger btn-bold btn-sm" href="../services">Upgrade plan</a>
 															<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
 														</li>
 													</ul>
@@ -133,8 +133,8 @@ $title=' | Profile';
 															<span class="kt-widget__data">Melbourne</span>
 														</div>
 													</div>
-													<div class="kt-widget__items">
-														<a href="demo1/custom/apps/user/profile-1/overview.html" class="kt-widget__item kt-widget__item--active">
+													<div class="kt-widget__items">      
+														<a href="profile/Overview/index.php" class="kt-widget__item kt-widget__item--active">
 															<span class="kt-widget__section">
 																<span class="kt-widget__icon">
 																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -149,10 +149,10 @@ $title=' | Profile';
 																</span>
 															</span>
 														</a>
-														<a href="demo1/custom/apps/user/profile-1/personal-information.html" class="kt-widget__item ">
+														<a href="../profile/Personal" class="kt-widget__item ">
 															<span class="kt-widget__section">
 																<span class="kt-widget__icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink=" http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
 																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 																			<polygon id="Shape" points="0 0 24 0 24 24 0 24" />
 																			<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" id="Mask" fill="#000000" fill-rule="nonzero" opacity="0.3" />
