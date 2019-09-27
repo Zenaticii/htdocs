@@ -85,7 +85,7 @@ $title=' | Profile';
 														</li>
 														<li class="kt-nav__separator"></li>
 														<li class="kt-nav__foot">
-															<a class="btn btn-label-danger btn-bold btn-sm" href="#">Upgrade plan</a>
+															<a class="btn btn-label-danger btn-bold btn-sm" href="../../services">Upgrade plan</a>
 															<a class="btn btn-clean btn-bold btn-sm" href="#" data-toggle="kt-tooltip" data-placement="right" title="Click to learn more...">Learn more</a>
 														</li>
 													</ul>
