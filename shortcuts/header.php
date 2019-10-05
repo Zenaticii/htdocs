@@ -46,7 +46,7 @@ echo '
 									<h4 class="kt-menu__section-text">Students</h4>
 									<i class="kt-menu__section-icon flaticon-more-v2"></i>
 								</li>
-								<li class="kt-menu__item  kt-menu__item--submenu'.$active_placeholder.'" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Classes</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+								<li class="kt-menu__item  kt-menu__item--submenu'.$active_classes.'" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon-map"></i><span class="kt-menu__link-text">Classes</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 									<div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
 										<ul class="kt-menu__subnav">
 											<li class="kt-menu__item " aria-haspopup="true" data-ktmenu-link-redirect="1"><a href="demo12/inner.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">9th grade</span></a></li>
