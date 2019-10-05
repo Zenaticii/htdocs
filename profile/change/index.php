@@ -192,7 +192,7 @@ $title=' | Profile';
 																		</g>
 																	</svg> </span>
 																<span class="kt-widget__desc">
-																	Change Passwort
+																	Change Password
 																</span>
 															</span>
 															<span class="kt-badge kt-badge--unified-danger kt-badge--sm kt-badge--rounded kt-badge--bolder">5</span>
