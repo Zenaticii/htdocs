@@ -139,6 +139,8 @@ echo '
 											<div class="input-group">
 												<button><a class="form-control kt-quick-search__input" href="../Profile/Tax">Tax Information</a></button>
 												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												<button><a class="form-control kt-quick-search__input" href="../Contact">Contact Us</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
 											</div>
 										</form>
 										<div class="kt-quick-search__wrapper kt-scroll" data-scroll="true" data-height="300" data-mobile-height="200">
