@@ -110,6 +110,36 @@ echo '
 												<input type="text" class="form-control kt-quick-search__input" placeholder="Search...">
 												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
 											</div>
+											<div class="input-group">
+												
+												<button><a class="form-control kt-quick-search__input" href="../login">Login</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												<button><a class="form-control kt-quick-search__input" href="../Profile/Account">Account Information</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												</div>
+												<div class="input-group">
+												<button><a class="form-control kt-quick-search__input" href="../Profile/Change">Change Your Password</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												
+												<button><a class="form-control kt-quick-search__input" href="../Profile/CreditCards">Saved Credit Cards</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												</div>
+												<div class="input-group">
+												<button><a class="form-control kt-quick-search__input" href="../Profile/Email">Email Settings</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												<button><a class="form-control kt-quick-search__input" href="../Profile/Overview">Profile Overview</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												</div>
+												<div class="input-group">
+												<button><a class="form-control kt-quick-search__input" href="../Profile/Personal">Personal Information</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+												<button><a class="form-control kt-quick-search__input" href="../Profile/statements">Statements</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+											</div>
+											<div class="input-group">
+												<button><a class="form-control kt-quick-search__input" href="../Profile/Tax">Tax Information</a></button>
+												<div class="input-group-append"><span class="input-group-text"><i class="la la-close kt-quick-search__close"></i></span></div>
+											</div>
 										</form>
 										<div class="kt-quick-search__wrapper kt-scroll" data-scroll="true" data-height="300" data-mobile-height="200">
 										</div>
