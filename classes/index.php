@@ -24,7 +24,7 @@ $title=' | Classes';
 		<div class="alert alert-light alert-elevate" role="alert">
 			<div class="alert-icon"><i class="flaticon-warning kt-font-brand"></i></div>
 			<div class="alert-text">
-				The Metronic Datatable component supports local or remote data source. For the local data you can pass javascript array as data source. In this example the grid fetches its
+				The VirtualGrades Datatable component supports local or remote data source. For the local data you can pass javascript array as data source. In this example the grid fetches its
 				data from a javascript array data source. It also defines
 				the schema model of the data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and
 				paging performed in user browser(frontend).
