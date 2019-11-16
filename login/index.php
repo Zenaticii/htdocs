@@ -1,6 +1,17 @@
 <?php
+// Initialize the session
+// session_start();
+ 
+// // Check if the user is already logged in, if yes then redirect him to welcome page
+// if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+//     header("location: ../");
+//     exit;
+// }
+
 $links='../';
 include $links.'shortcuts/active-variables.php';
+include $links.'shortcuts/conn-database.php';
+include $links.'shortcuts/login-verify.php';
 //$active_dashboard=$active_page;
 //$current_page='Dashboard';
 //$previous_page='';
@@ -41,12 +52,12 @@ $title=' | Login';
 							<div class="kt-login__head">
 								<h3 class="kt-login__title">Sign In</h3>
 							</div>
-							<form class="kt-form" action="">
-								<div class="input-group">
-									<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="on">
+							<form class="kt-form"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+								<div class="input-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+									<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="on" value="<?php echo $email; ?>">
 								</div>
-								<div class="input-group">
-									<input class="form-control" type="password" placeholder="Password" name="password">
+								<div class="input-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+									<input class="form-control" type="password" placeholder="Password" name="password" value="<?php echo $password; ?>">
 								</div>
 								<div class="row kt-login__extra">
 									<div class="col">
@@ -70,18 +81,18 @@ $title=' | Login';
 								<h3 class="kt-login__title">Sign Up</h3>
 								<div class="kt-login__desc">Enter your details to create your account:</div>
 							</div>
-							<form class="kt-form" action="">
+							<form class="kt-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 								<div class="input-group">
 									<input class="form-control" type="text" placeholder="Fullname" name="fullname">
 								</div>
-								<div class="input-group">
+								<div class="input-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
 									<input class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
 								</div>
-								<div class="input-group">
-									<input class="form-control" type="password" placeholder="Password" name="password">
+								<div class="input-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+									<input class="form-control" type="password" placeholder="Password" name="password" value="<?php echo $password; ?>">
 								</div>
-								<div class="input-group">
-									<input class="form-control" type="password" placeholder="Confirm Password" name="rpassword">
+								<div class="input-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+									<input class="form-control" type="password" placeholder="Confirm Password" name="rpassword" value="<?php echo $confirm_password; ?>">
 								</div>
 								<div class="row kt-login__extra">
 									<div class="col kt-align-left">
