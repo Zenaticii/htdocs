@@ -1,4 +1,6 @@
 <?php
+$links = '../';
+include $links.'shortcuts/conn-database.php';
 $sql = "SELECT * FROM basic_users";
 $result = $conn->query($sql);
 if ($result->num_rows > 0)
