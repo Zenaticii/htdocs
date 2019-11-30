@@ -12,9 +12,9 @@ $links='../';
 include $links.'shortcuts/active-variables.php';
 include $links.'shortcuts/conn-database.php';
 include $links.'shortcuts/login-verify.php';
-//$active_dashboard=$active_page;
-//$current_page='Dashboard';
-//$previous_page='';
+$active_dashboard=$active_page;
+$current_page='Dashboard';
+$previous_page='';
 $title=' | Login';
 ?>
 <!DOCTYPE html>
