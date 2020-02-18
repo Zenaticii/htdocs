@@ -46,7 +46,7 @@ $title=' | Services';
 							<div class="kt-pricing-1__visual">
 								<div class="kt-pricing-1__hexagon1"></div>
 								<div class="kt-pricing-1__hexagon2"></div>
-								<span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-rocket"></i></span>
+								<span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-gift"></i></span>
 							</div>
 							<span class="kt-pricing-1__price">Free</span>
 							<span class="kt-pricing-1__description">
@@ -83,7 +83,7 @@ $title=' | Services';
 							<div class="kt-pricing-1__visual">
 								<div class="kt-pricing-1__hexagon1"></div>
 								<div class="kt-pricing-1__hexagon2"></div>
-								<span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-gift"></i></span>
+								<span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-rocket"></i></span>
 							</div>
 							<span class="kt-pricing-1__price">5<span class="kt-pricing-1__label">USD</span></span>
 							<h2 class="kt-pricing-1__subtitle">Enterprice License</h2>

@@ -14,7 +14,7 @@ include $links.'shortcuts/active-variables.php';
 $active_dashboard=$active_page;
 $current_page='Dashboard';
 $previous_page='';
-$title=' | Dashboard';
+$title=' | Home';
 ?>
 <!DOCTYPE html>
 <html>
