@@ -1,5 +1,15 @@
 <?php
 $links='';
+
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: ".$links."login");
+    exit;
+}
+
 include $links.'shortcuts/active-variables.php';
 $active_dashboard=$active_page;
 $current_page='Dashboard';

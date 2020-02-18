@@ -40,7 +40,9 @@ echo '
 					<div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
 						<div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1">
 							<ul class="kt-menu__nav ">
-								<li class="kt-menu__item  kt-menu__item--submenu'.$active_dashboard.'" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon2-architecture-and-city"></i><span class="kt-menu__link-text">Dashboard</span></a>
+								<li class="kt-menu__item  kt-menu__item--submenu'.$active_dashboard.'" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="'.$links.'dashboard" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon2-architecture-and-city"></i><span class="kt-menu__link-text">Dashboard</span></a>
+								</li>
+								<li class="kt-menu__item  kt-menu__item--submenu'.$active_personal_table.'" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="'.$links.'personal_table" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon2-crisp-icons"></i><span class="kt-menu__link-text">Personal Table</span></a>
 								</li>
 								<li class="kt-menu__section kt-menu__section--first">
 									<h4 class="kt-menu__section-text">Students</h4>
@@ -797,7 +799,7 @@ echo '
 							</div>
 
 							<!--end: Language bar -->';
-							if(true)
+							if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
 							{
 								echo '
 								<div class="kt-header__topbar-item">
@@ -812,11 +814,11 @@ echo '
 								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
 									<div class="kt-header__topbar-user">
 										<span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
-										<span class="kt-header__topbar-username kt-hidden-mobile">Sean</span>
+										<span class="kt-header__topbar-username kt-hidden-mobile">'.$_SESSION["username"].'</span>
 										<img alt="Pic" class="kt-radius-100 kt-hidden" src="./assets/media/users/300_25.jpg" />
 
 										<!--use below badge element instead the user avatar to display username"s first letter(remove kt-hidden class to display it) -->
-										<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">S</span>
+										<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">'.$_SESSION["username"][0].'</span>
 									</div>
 								</div>
 								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
@@ -824,13 +826,13 @@ echo '
 									<!--begin: Head -->
 									<div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
 										<div class="kt-user-card__avatar">
-											<img class="kt-hidden-" alt="Pic" src="./assets/media/users/300_25.jpg" />
+											<img class="kt-hidden" alt="Pic" src="./assets/media/users/300_25.jpg" />
 
 											<!--use below badge element instead the user avatar to display username"s first letter(remove kt-hidden class to display it) -->
-											<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
+											<span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden-">'.$_SESSION["username"][0].'</span>
 										</div>
 										<div class="kt-user-card__name">
-											Sean Stone
+											'.$_SESSION["username"].'
 										</div>
 										<div class="kt-user-card__badge">
 											<span class="btn btn-label-primary btn-sm btn-bold btn-font-md">23 messages</span>
@@ -841,7 +843,7 @@ echo '
 
 									<!--begin: Navigation -->
 									<div class="kt-notification">
-										<a href="#" class="kt-notification__item">
+										<a href="'.$links.'profile/overview" class="kt-notification__item">
 											<div class="kt-notification__item-icon">
 												<i class="flaticon2-calendar-3 kt-font-success"></i>
 											</div>
@@ -907,7 +909,7 @@ echo '
 											</div>
 										</a>
 										<div class="kt-notification__custom kt-space-between">
-											<a href="demo12/custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
+											<a href="../logout" class="btn btn-label btn-label-brand btn-sm btn-bold">Sign Out</a>
 											<a href="demo12/custom/user/login-v2.html" target="_blank" class="btn btn-clean btn-sm btn-bold">Upgrade Plan</a>
 										</div>
 									</div>
